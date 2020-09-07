@@ -30,7 +30,14 @@
 6.1.用for循环代替while循环
 	for循环优于while循环，比while快不少
 6.2使用隐式for循环代替显式for循环
-	def forLoop():
+	def computeSum(size: int) -> int:
+		_sum = 0
+		for i in range(size):
+			_sum += i
+		return _sum
+	上述代码等同于：
+	def computeSum(size: int) -> int:
+		return sum(range(size))
 	
 6.3.减少内层for循环的计算量
 	for x in range(5):
